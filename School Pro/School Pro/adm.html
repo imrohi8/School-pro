@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Admissions</title>
+    <style>
+        body {
+            font-family: Segoe UI, Tahoma, Geneva,Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000000;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 50px;
+            background-color: #333bc9;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: .5em;
+            padding-bottom: 1.5em;
+        }
+        #a{
+            font-size: xx-large;
+        }
+        h1 {
+            margin: 0;
+            line-height: 70px;
+            font-size: 55px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blurred-section {
+  position: relative;
+  height: 350px;
+  background: linear-gradient(to right, #333bc9, #6268d6);
+}
+    @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+            .overlay {
+                position: absolute;
+                top: 35px;
+                left: 14%;
+                width: 70%;
+                height: 70%;
+                background: rgba(255, 255, 255, 0.107); 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                backdrop-filter: blur(25px); 
+                animation: slideIn 1s ease-in-out;
+            }
+            h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            }
+
+            #po {
+            font-size: 1.2em;
+            margin: 0;
+            color: #fff;
+            }
+                .mm{
+                    display: flex;
+                    flex-direction: column;
+            align-items: center;
+            justify-content:flex-start;
+            margin: 20px;
+            flex-wrap:wrap-reverse;
+                }
+    
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        p {
+            color: #333bc9;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        ul {
+            color: #000000;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            list-style-type:decimal;
+            padding: 0;
+        }
+
+        li {
+            margin-left: 30px;
+            font-size: 24px;
+            color: #000000;
+        }
+        h3{
+            color: black;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .fee-structure {
+            height: 290;
+            padding: 20px;
+             background: white; 
+             box-Shadow: 10px 10px 60px 6px rgba(0, 0, 0, 0.50);
+             width: 1000px;
+             border-Radius: 35px;
+             margin:  auto;
+             margin-top: 35px;
+        }
+        .fee-structuress {
+            width: 1000px;
+            border-Radius: 35px;
+               background-color: #333BC9;
+               box-Shadow: 10px 10px 60px 6px rgba(0, 0, 0, 0.50);
+               margin:  auto;
+               margin-top: 30px;
+               margin-bottom: 20px;
+
+        }
+
+        button {
+            background-color: white;
+            color: #333bc9;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 0 10px #fff;
+            margin-top: 10px;
+            margin-left: 28%;
+            
+        }
+        #t,#f{
+            border-radius: 20px;
+            box-shadow: 0 0 10px white;
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+
+       
+    table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-bottom: 5px;
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #333BC9;
+            text-align: center;
+            padding: 12px;
+            background-color: #fff;
+
+        }
+
+        th {
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="a">Admissions Information</h1>
+    </header>
+
+    <section class="blurred-section">
+        <div class="overlay">
+          <h1 >OVERVIEW</h1>
+          <p id="po">The admission process for government schools in Karnataka typically begins with notifications from the State Education Department, outlining eligibility criteria and application procedures. Interested candidates, usually residents of Karnataka or specific localities, submit filled application forms with required documents. The selection process, often involving a lottery system, may prioritize economically weaker sections. Some schools may charge a nominal admission fee, and selected candidates undergo a verification process. Admitted students should be familiar with school timings, curriculum, and any specific rules. It is essential to check with the official education department or specific schools for the latest and detailed information.</p>
+        </div>
+      </section>
+
+    <section class="fee-structure">
+        <h2 style="color:black">The Government PU College, Rajanakunte</h2><hr>
+        <p>The college offers diverse courses in Arts, Commerce, and Science.</p>
+        <ul>
+            <li>Students: 388</li>
+            <li>Faculty: 11</li>
+        </ul>
+        <p>Courses offered are :
+            <ul>
+                <li>Science (PCMB/PCMC)</li>
+                <li>Commerce (HEBA , CEBA)</li>
+                <li>Arts (HEPS)</li>
+            </ul>
+        </p>
+        </section>
+        <section class="fee-structure">
+            <h3 style="color: #000000">FEE STRUCTURE</h3><hr>
+        <div class="mm">
+            <div>
+            <table><h2 style="color: #333BC9;"> 1st PUC</h2>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Category</th>
+                        <th colspan="3">PCMB / PCMC</th>
+                        <th colspan="3">CEBA</th>
+                        <th colspan="3">HEBA / HEPS</th>
+                    </tr>
+                    <tr>
+                        <th>GM</th>
+                        <th>SC / ST / G - 1 [GIRLS]</th>
+                        <th>OBC</th>
+                        <th>GM</th>
+                        <th>SC / ST / G - 1 [GIRLS]</th>
+                        <th>OBC</th>
+                        <th>GM</th>
+                        <th>SC / ST / G - 1 [GIRLS]</th>
+                        <th>OBC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FEE</td>
+                        <td>1466</td>
+                        <td>255</td>
+                        <td>796</td>
+                        <td>1466</td>
+                        <td>255</td>
+                        <td>796</td>
+                        <td>1466</td>
+                        <td>255</td>
+                        <td>796</td>
+                    </tr>
+                    <tr>
+                        <td>P - EXAM</td>
+                        <td>336</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>112</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>LAB</td>
+                        <td>150</td>
+                        <td>0</td>
+                        <td>150</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Govt Total Fee</td>
+                        <td>1952</td>
+                        <td>255</td>
+                        <td>946</td>
+                        <td>1628</td>
+                        <td>305</td>
+                        <td>846</td>
+                        <td>1466</td>
+                        <td>255</td>
+                        <td>769</td>
+                    </tr>
+                    <tr>
+                        <td>CDC</td>
+                        <td>548</td>
+                        <td>745</td>
+                        <td>554</td>
+                        <td>672</td>
+                        <td>695</td>
+                        <td>745</td>
+                        <td>534</td>
+                        <td>745</td>
+                        <td>704</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL</td>
+                        <td>2500</td>
+                        <td>1000</td>
+                        <td>1500</td>
+                        <td>2300</td>
+                        <td>1000</td>
+                        <td>1500</td>
+                        <td>2000</td>
+                        <td>1000</td>
+                        <td>1500</td>
+                    </tr>
+                </tbody>
+            </table>
+           
+            <table><h2 style="color: #333BC9;"> 2nd PUC</h2>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Category</th>
+                        <th colspan="3">PCMB / PCMC</th>
+                        <th colspan="3">CEBA</th>
+                        <th colspan="3">HEBA / HEPS</th>
+                    </tr>
+                    <tr>
+                        <th>GM</th>
+                        <th>SC / ST / G - 1 [GIRLS]</th>
+                        <th>OBC</th>
+                        <th>GM</th>
+                        <th>SC / ST / G - 1 [GIRLS]</th>
+                        <th>OBC</th>
+                        <th>GM</th>
+                        <th>SC / ST / G - 1 [GIRLS]</th>
+                        <th>OBC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FEE</td>
+                        <td>1466</td>
+                        <td>230</td>
+                        <td>686</td>
+                        <td>686</td>
+                        <td>255</td>
+                        <td>686</td>
+                        <td>686</td>
+                        <td>230</td>
+                        <td>686</td>
+                    </tr>
+                    <tr>
+                        <td>P - EXAM</td>
+                        <td>336</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>110</td>
+                        <td>110</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>LAB</td>
+                        <td>330</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>112</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>EXAM</td>
+                        <td>400</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>400</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>M - FE</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Govt Total Fee</td>
+                        <td>2132</td>
+                        <td>230</td>
+                        <td>736</td>
+                        <td>1358</td>
+                        <td>415</td>
+                        <td>736</td>
+                        <td>736</td>
+                        <td>280</td>
+                        <td>736</td>
+                    </tr>
+                    <tr>
+                        <td>CDC</td>
+                        <td>868</td>
+                        <td>720</td>
+                        <td>764</td>
+                        <td>642</td>
+                        <td>585</td>
+                        <td>764</td>
+                        <td>764</td>
+                        <td>720</td>
+                        <td>764</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL</td>
+                        <td>3000</td>
+                        <td>1000</td>
+                        <td>1500</td>
+                        <td>2000</td>
+                        <td>1000</td>
+                        <td>1500</td>
+                        <td>1500</td>
+                        <td>1000</td>
+                        <td>1500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+    </section>
+
+    <section class="fee-structuress">
+        
+        <h2>The Government School, Rajanakunte</h2>
+        
+        <div class="mm" style="flex-direction: row-reverse;">
+        <div>
+       <section id="t"> <h3>The Government High School, Rajanakunte</h3>
+        <p style="background-color: (to right, #333bc9, #6268d6);">This institution provides education for 9th and 10th grades in both Kannada and English mediums.</p>
+        <ul>
+            <li>Students: 197</li>
+            <li>Faculty: 9</li>
+        </ul></section></div>
+        <div>
+        <section id="f"><h3>The Government Primary School, Rajanakunte</h3>
+        <p style="color: #333BC9">It caters to students from Std 1 to 8. The medium of instruction for Std 1-5 is Kannada, while for 6th-8th; it extends to both Kannada and English.</p>
+        <ul>
+            <li>Students: 357</li>
+            <li>Faculty: 5+ Guest Faculties</li>
+        </ul></section>
+        <br></div></div>
+        <div>
+            <button onclick="openImage()">View Government School Fee Structure</button>
+        </div>
+        
+        <!-- Hidden image container -->
+        <div id="imageContainer" style="display: none;">
+            <!-- Image to be displayed -->
+            <img src="" alt="Image">
+        </div>
+        
+        <script>
+            // JavaScript function to open the image
+            function openImage() {
+                // Show the image container
+                var imageUrl = "./img/fee structure.jpg";
+
+        // Open a new window with the image
+        window.open(imageUrl);
+            }
+        </script>
+        <br>
+    </section>
+</body>
+
+</html>

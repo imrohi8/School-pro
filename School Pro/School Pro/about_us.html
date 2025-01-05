@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f3f7;
+        }
+        header {
+            /* background-color: #5157d1; */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .container {
+            max-width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #d1d6f3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        h2 {
+            color: #333bc9;
+            animation: slideInLeft 1s ease;
+        }
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        p {
+            line-height: 1.6;
+            color: #151414;
+            animation: fadeIn 1s ease;
+        }
+        .committee-members {
+            display: flex;
+            flex-direction: column;
+        }
+        .committee-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            animation: slideInRight 1s ease;
+        }
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .committee-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            animation: zoomIn 1s ease;
+        }
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .board-members {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            animation: fadeIn 1s ease;
+        }
+        .board-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #e9e9e9;
+        border-radius: 8px;
+        animation: slideInUp 1s ease;
+}
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .board-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: zoomIn 1s ease;
+        }
+        .board-member-info {
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+        .chairman-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+            animation: slideInLeft 1s ease;
+        }
+        .chairman-section img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: zoomIn 1s ease;
+        }
+        .chairman-section p {
+            line-height: 1.6;
+            color: #666;
+            animation: fadeIn 1s ease;
+        }
+        .principal-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+            animation: slideInRight 1s ease;
+        }
+        .principal-section h2 {
+            color: #333bc9;
+            animation: slideInLeft 1s ease;
+        }
+        .principal-section p {
+            line-height: 1.6;
+            color: #666;
+            animation: fadeIn 1s ease;
+        }
+        .principal-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            animation: slideInUp 1s ease;
+        }
+        .principal-info div {
+            flex: 1;
+            margin: 0 10px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 8px;
+        }
+        .principal-info div img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background: linear-gradient(to right, #333bc9, #6268d6);">
+        <h1>About Us</h1>
+        
+    </header>
+    <div class="container">
+        <section id="vision-mission">
+            <h2>Vision and Mission</h2>
+            <p><strong>Vision:</strong> To provide quality education to students coming from all strata of society. To shape the life of each student for a better future.</p>
+            <p><strong>Mission:</strong> To create a technologically upgraded institution which caters to the educational standards of today’s times.</p>
+        </section>
+
+        <section id="chairman">
+            <div class="chairman-section">
+                <img src="./img/chairperson.png" alt="Shri S R Vishwanath">
+                <div>
+                    <h2>About the Chairman</h2>
+                    <p>Shri S R Vishwanath, an MLA from Yelahanka constituency, is the former Chairman of Bangalore 
+        Development Authority (BDA) and presently a Member of Tirumala Tirupati Devasthanams (TTD) 
+        Board. He is a social worker and the chairperson of Government school and PU college of 
+        Rajanukunte. He is also the founder of Vishwa Vani Foundation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="principals">
+            <div class="principal-section">
+                <h2>Principals</h2>
+                <div class="principal-info">
+                    <div>
+                        <img src="./img/alpha.jpg" alt="V R Manjula">
+                        <h3>Incharge Principal of PU College:</h3>
+                        <p>V R Manjula</p>
+                        <p>Edu - M.A, M.Phil</p>
+                        <p>Teaching experience – 17 years</p>
+                        <p>Joining date – 05/11/2007</p>
+                    </div>
+                    <div>
+                        <img src="./img/3.jpg" alt="Kantaruju B G">
+                        <h3>Principal of High School:</h3>
+                        <p>Kantaruju B G</p>
+                        <p>Edu – MSc, M.Ed, KES</p>
+                        <p>Teaching experience – 17 years</p>
+                        <p>Joining date – 15/06/2007</p>
+                    </div>
+                    <div>
+                        <img src="./img/2.jpg" alt="SREENIVASA G">
+                        <h3>Incharge Principal of Primary School:</h3>
+                        <p>SREENIVASA G</p>
+                        <p>Edu – CPEd, Kan & Eng Sr typing, PUC</p>
+                        <p>Teaching experience – 29 years</p>
+                        <p>Joining date – 26/07/1994</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="college-dev-committee">
+            <h2>College Development Committee</h2>
+            <div class="committee-members">
+                <div class="committee-member">
+                    <img src="./img/chairperson.png" alt="Shri S R Vishwanath">
+                    <div>
+                        <h3>Shri S R Vishwanath</h3>
+                        <p>MLA, Yelahanka | Member, TTD Board | Former Chairman, Bangalore Development Authority (BDA)</p>
+                    </div>
+                </div>
+                <div class="committee-member">
+                    <img src="./img/4.jpg" alt="R M Somashekar Reddy">
+                    <div>
+                        <h3>R M Somashekar Reddy</h3>
+                        <p>Businessman</p>
+                        <p>More information about R M Somashekar Reddy goes here.</p>
+                    </div>
+                </div>
+                <div class="committee-member">
+                    <img src="./img/5.jpg" alt="RC Rajendra Kumar">
+                    <div>
+                        <h3>RC Rajendra Kumar</h3>
+                        <p>B.Pharm, Social Worker</p>
+                        <p>More information about RC Rajendra Kumar goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="board-of-members">
+            <h2>Board of Members</h2>
+            <div class="board-members">
+                <div class="board-member">
+                    <img src="./img/6.jpg" alt="Shri. M Manjunath">
+                    <div class="board-member-info">
+                        <h3>Shri. M Manjunath</h3>
+                        <p>Edu - BA</p>
+                    </div>
+                </div>
+                <div class="board-member">
+                    <img src="./img/7.jpg" alt="Shri Shivanna N C">
+                    <div class="board-member-info">
+                        <h3>Shri Shivanna N C</h3>
+                        <p>Edu – MA, M.Phil<br>Rtd.Principal</p>
+                    </div>
+                </div>
+                <div class="board-member">
+                    <img src="./img/8.jpg" alt="Shri.M MohanKumar">
+                    <div class="board-member-info">
+                        <h3>Shri.M MohanKumar</h3>
+                        <p>Edu - Dip civil</p>
+                    </div>
+                </div>
+                <div class="board-member">
+                    <img src="./img/9.png" alt="Shri M Thimma Reddy">
+                    <div class="board-member-info">
+                        <h3>Shri M Thimma Reddy</h3>
+                        <p>Edu - BSC, B.Ed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </div>
+</body>
+</html>
